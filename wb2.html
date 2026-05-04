@@ -1,0 +1,231 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DriveTech Product Design</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+{ margin:0; padding:0; box-sizing:border-box; font-family:Poppins; }
+
+body { background:#f5f7fa; }
+
+header {
+    position:fixed;
+    width:100%;
+    top:0;
+    backdrop-filter:blur(10px);
+    background:rgba(13,44,84,0.85);
+    color:white;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+header h1 { font-size:22px; }
+
+nav a {
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-size:14px;
+}
+
+nav a:hover { color:#ff9800; }
+
+
+.hero {
+    height:100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+    url('wt3.jpg') center/cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h2 {
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.hero p {
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+.btn {
+    background:#ff9800;
+    padding:12px 25px;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+.btn:hover {
+    background:#e68900;
+    transform:scale(1.05);
+}
+
+.section {
+    padding:80px 40px;
+    text-align:center;
+}
+
+.section h2 {
+    font-size:32px;
+    margin-bottom:20px;
+}
+.grid {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card {
+    background:white;
+    width:280px;
+    margin:15px;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover {
+    transform:translateY(-10px);
+}
+
+.card img {
+    width:100%;
+    border-radius:8px;
+    margin-bottom:15px;
+}
+
+.dark {
+    background:#0d2c54;
+    color:white;
+}
+
+.contact p { margin:10px 0; }
+footer {
+    background:#0d2c54;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>DriveTech</h1>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<h2>Precision Design for Motion Systems</h2>
+<p>Automotive • Agriculture • Heavy Machinery</p>
+<a href="#contact" class="btn">Get in Touch</a>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+<h2>About Us</h2>
+<p>DriveTech Product Design delivers high-quality engineering solutions specializing in motion systems, CAD modeling, and product development for demanding industries.</p>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+<h2>Our Services</h2>
+<div class="grid">
+
+<div class="card">
+<h3>3D CAD Design</h3>
+<p>Precision modeling using advanced tools like Creo.</p>
+</div>
+
+<div class="card">
+<h3>Sheet Metal</h3>
+<p>Production-ready designs with cost optimization.</p>
+</div>
+
+<div class="card">
+<h3>Plastic Design</h3>
+<p>Injection molding & snap-fit expertise.</p>
+</div>
+
+<div class="card">
+<h3>Reverse Engineering</h3>
+<p>Accurate CAD from physical parts.</p>
+</div>
+
+</div>
+</section>
+
+<!-- CORE EXPERTISE -->
+<section class="section dark">
+<h2>Core Expertise</h2>
+<p>? Driveline Components & Mechanisms</p>
+<p>? Switch & Control Systems</p>
+<p>? Structural & Load Bearing Design</p>
+<p>? DFM & Cost Optimization</p>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+<h2>Product Demonstration</h2>
+<div class="grid">
+
+<div class="card">
+<img src="img3.jpg">
+<h3>Automotive System</h3>
+<p>High-performance design for motion efficiency.</p>
+</div>
+
+<div class="card">
+<img src="img1.jpg">
+<h3>Agriculture Equipment</h3>
+<p>Durable field-ready components.</p>
+</div>
+
+<div class="card">
+<img src="img2.jpg">
+<h3>Heavy Machinery</h3>
+<p>Robust structural engineering.</p>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+<h2>Contact</h2>
+<p>Email: your@email.com</p>
+<p>Phone: +91-XXXXXXXXXX</p>
+<p>Location: India</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 DriveTech Product Design</p>
+</footer>
+
+</body>
+</html>
